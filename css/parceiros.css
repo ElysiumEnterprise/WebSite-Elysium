@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Caviar-Dreams';
+    src: url('../fonts/CaviarDreams.ttf');
+}
+@font-face {
+    font-family: 'Abadi-Extra-Light';
+    src: url('../fonts/AbadiMTStd-ExtraLight.ttf');
+}
+:root{
+    --color-background-nav: #0e2d54;
+    --color-back-container: #5488c8;
+    --color-neutral-20: #e8e9ed;
+    --color-neutral-30: white ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abadi-Extra-Light';
+}
+.titulo-parceiros{
+    font-weight: bold;
+    text-align: center;
+    
+    color: #123e63;
+    
+    font-family: "Abadi-Extra-Light";
+    
+}
+.container-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.container-parceiros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*flex-flow: row wrap;*/
+
+}
+
+.contCard-parceiros{
+    width: 1800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-parceiros{
+    background-color: #0e2d54;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px #00000022;
+    transition: 0.1s ease-in;
+}
+
+.card-parceiros:hover{
+    transform: scale(1.04);
+}
+
+.container-parceiros .card-parceiros{
+    position: relative;
+    padding: 40px;
+    width: 380px;
+    margin: 12px;
+    overflow: hidden;
+}
+
+.imgCard-parceiros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-parceiros{
+    width: 160px;
+}
+
+.empresa{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: "Abadi-Extra-Light";
+}
+
+.desc{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt-empresa{
+    color: white;
+    font-weight: bold;
+    font-family: "Abadi-Extra-Light";
+    text-align: justify;
+}
+
+.btn-empresa{
+    background-color: var(--color-neutral-20);
+    border:none;
+    width: 65%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 26px;
+    border-radius: 15px;
+    padding: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition:ease-in 0.2s;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--color-background-nav);
+}
+
+.btn-empresa:hover{
+    background-color: #68b3f0bd;
+    color: #fff;
+}
+.link:hover{
+    color: #e8e9ed;
+}

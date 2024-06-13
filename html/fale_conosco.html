@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fale-conosco-style.css">
+    <link rel="shortcut icon" href="../img/android-chrome-512x512.png" type="image/x-icon">
+    <title>Elysium</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">
+                <img src="../img/logo-nome.png" class="img-fluid img-logo-nav" alt="Logo da Empressa Elysium">
+            </a>
+            <div class="menu-mobile">
+                <span class="material-icons" id="menu-hamburguer" onclick="abrirMenu()">menu</span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="quem_somos.html">Nossa Equipe</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="fale_conosco.html">Fale Conosco</a></li>
+                <li> <a href="parceiros.html">Parceiros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fale-conosco">
+            <div class="primeiro-container">
+                <div class="img-cont">
+                    <img src="../img/icon-fale-conosco.png" alt="Icon fale conosco" class="imagem-icon img-fluid">
+                </div>
+            </div>
+            <div class="segundo-container">
+                <form method="post" action='../php/enviar-email.php' class="formulario" name="form">
+                    <div class="card-header">
+                        <h1 class="titulo">Fale Conosco</h1>
+                    </div>
+    
+                    <div class="card-content">
+                        
+                        <div class="card-content-area">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="Digite seu nome..." >
+                            <div class="errorName" id="errorContent"></div>
+                        </div>
+    
+                        <div class="card-content-area">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu email..." >
+                            <div class="errorEmail" id="errorContent"></div>
+                        </div>
+    
+                        <div class="card-content-area">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea name="msg" id="msg" cols="30" rows="4" ></textarea>
+                            <div class="errorMsg" id="errorContent"></div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="card-footer">
+                        <input type="submit" value="Enviar" class="btn-form">
+                    </div>
+                </form>
+            </div>
+    
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="lista-link-footer">
+                <div class="group-links">
+                    <h6>Elysium</h6>
+                    <ul>
+                        <li><a href="">Soluções</a></li>
+                        <li><a href="">Tecnologias</a></li>
+                        <li><a href="">Serviços</a></li>
+                        <li><a href="">Sobre</a></li>
+                    </ul>
+                </div>
+                <div class="group-links">
+                    <h6>Parceiros</h6>
+                    <ul>
+                        <li><a href="">Programa de Parceiros</a></li>
+                        <li><a href="">Todos os parceiros</a></li>
+                    </ul>
+                </div>
+                <div class="group-links">
+                    <h6>Suporte</h6>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Fale conosco</a></li>
+                        <li><a href="">Centro de Ajuda</a></li>
+                        <li><a href="">Comunidade</a></li>
+                    </ul>
+                </div>
+                <div class="group-links">
+                    <h6>Projetos</h6>
+                    <ul>
+                        <li><a href="">Projeto 1</a></li>
+                        <li><a href="">Projeto 2</a></li>
+                        <li><a href="">Projeto 3</a></li>
+                        <li><a href="">Projeto 4</a></li>
+                    </ul>
+                </div>
+                <div class="group-links">
+                    <h6>Recursos</h6>
+                    <ul>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Biblioteca de Recursos</a></li>
+                        <li><a href="">Acessibilidade</a></li>
+                        <li><a href="">Eventos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+                 
+                 <div class="redes-sociais">
+                    <a href=""><img src="../img/icon-instagram.png" class="img-fluid icon-redes" alt="Link Instagram"></a>
+                    <a href=""><img src="../img/icon-facebook.png" class="img-fluid icon-redes" alt="Link Facebook"></a>
+                    <a href=""><img src="../img/icon-github.png" class="img-fluid icon-redes" alt="Link GitHub"></a>
+                 </div>
+                 <hr>
+                 <div class="marca-registrada">
+                    <span>Copyright &#169 2024. Todos os direitos reservados</span>
+                 </div>
+                 <div class="links-complementares">
+                    <small><a href="">Termos de uso</a></small>
+                    <small><a href="">Privacidade</a></small>
+                    <small><a href="">Preferências de Cookie</a></small>
+                 </div>
+        </div>
+    </footer>
+
+    </div>
+    <script src="../js/menu-mobile.js"></script>
+    <script src="../js/validar-form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

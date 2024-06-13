@@ -1,0 +1,161 @@
+:root{
+    --color-background-nav: #0e2d54;
+    --color-back-container: #5488c8;
+    --color-neutral-20: #e8e9ed;
+    --color-neutral-30: white ;
+}
+@font-face {
+    font-family: "caviar-dreams";
+    src: url('../fonts/CaviarDreams.ttf');
+}
+@font-face {
+    font-family: "Abadi";
+    src: url('../fonts/AbadiMTStd.ttf');
+}
+@font-face  {
+    font-family: "Abadi extra light" ;
+    src: url('../fonts/AbadiMTStd-ExtraLight.ttf');
+}
+.container-home{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color:var(--color-neutral-30);
+}
+.container-principal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 900px;
+    padding: 10px 20px ;
+    /*background-image: url('../img/fundo-2.png');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    background-attachment: local;
+    font-family: 'Abadi extra light';
+}
+.container-grid-principal, .container-sections{
+    display: grid;
+    flex: 1;
+    grid-template-columns: repeat(2, 2fr);
+    justify-content: center;
+    align-items: center;
+}
+.conteudo-texto-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    letter-spacing: 2px;
+}
+.conteudo-texto-principal h1, .container-sections .conteudo-texto-principal h2{
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0e2d54;
+    animation: entradaTitulo 1s ease-in normal;
+}
+.conteudo-texto-principal h1{
+    font-size: 60px;
+    text-align: left;
+}
+.conteudo-texto-principal p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    color: #0e2d54;
+    letter-spacing: 0;
+    animation: entradaParagrafo 1s normal ease-in;
+}
+.container-principal .imagem-ilustrativa-principal, .section-home .container-sections .imagem-ilustrativa-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: entradaTitulo 1s normal ease-in-out;
+}
+.container-principal .imagem-ilustrativa-principal img, .section-home .container-sections .imagem-ilustrativa-principal img{
+    width: 70%;
+}
+.space-btn-sobre{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.group-btn{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.space-btn-sobre a{
+    width: 50px;
+    transition: 0.2s ease-in-out;
+}
+.space-btn-sobre a:hover{
+    transform: scale(1.20);
+    
+}
+.space-btn-sobre span{
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    font-weight: bold;
+    color: #0e2d54;
+}
+
+.section-home{
+    font-family: 'Abadi extra light';
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 20px 20px;
+    background-color: white;
+    /*box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;*/
+}
+@media (max-width:500px){
+    .container-grid-principal{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-grid-principal, .container-sections{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .space-btn-sobre{
+        padding: 0;
+    }
+    .space-btn-sobre a{
+        width: 20px;
+    }
+    .space-btn-sobre span{
+        font-size: 14px;
+    }
+    
+}
+@keyframes entradaTitulo {
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes entradaParagrafo {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,305 @@
+@font-face {
+    font-family: 'Caviar-Dreams';
+    src: url('../fonts/CaviarDreams.ttf');
+}
+@font-face {
+    font-family: 'Abadi-Extra-Light';
+    src: url('../fonts/AbadiMTStd-ExtraLight.ttf');
+}
+:root{
+    --color-background-nav: #0e2d54;
+    --color-back-container: #5488c8;
+    --color-neutral-20: #e8e9ed;
+    --color-neutral-30: white ;
+}
+.container-titulo-section{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.container-titulo-section h1{
+    color: #0e2d54;
+    text-align: center;
+    font-weight: bold;
+}
+.container-fale-conosco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.primeiro-container{
+    width: 440px;
+    min-height: 500px;
+    border-radius: 20px;
+    background-color: #add8e646;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px #0000002c;
+}
+
+.imagem-icon{
+    height: 360px;
+    width: 400px;
+}
+
+.segundo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    
+   
+    margin-left: 1%;
+    background-color: #0e2d54;
+    border-radius: 20px;
+    box-shadow: 3px 3px #0000002c;
+}
+
+.titulo{
+    font-family: 'Abadi-Extra-Light';
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-neutral-20);
+}
+
+.formulario{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.card-header {
+    padding-bottom: 10px;
+}
+
+.card-content label {
+    font-family: 'Abadi-Extra-Light';
+    color: var(--color-neutral-20);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-content-area {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding:10px 0;
+}
+
+.card-content-area input {
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid var(--color-neutral-20);
+    outline: none;
+    color: var(--color-neutral-20);
+    font-size: 16px;
+    
+}
+
+
+.card-content-area input::-webkit-input-placeholder{
+    color: #fff;
+}
+textarea{
+    background-color: transparent;
+    border-color: var(--color-neutral-20);
+    border-radius: 10px;
+    outline: none;
+    color: var(--color-neutral-20);
+    font-size: 16px;
+    padding: 5px;
+    resize: none;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-form{
+    font-family: 'Abadi-Extra-Light';
+    width: 54%;
+    height: 32px;
+    font-size: 20px;
+    background-color: var(--color-neutral-20);
+    border:none;
+    color:var(--color-background-nav);
+    margin: 15px 0;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease-in;
+}
+
+.btn-form:hover{
+    background-color: #68b3f0bd;
+    color: #fff;
+}
+
+#errorContent{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    transition: 0.5s ease-in;
+}
+
+.errorMessage{
+    color: red;
+    font-size: 16px;
+    font-family: 'Abadi-Extra-Light';
+}
+
+@media screen and (max-width: 400px){
+    
+    .primeiro-container{
+        overflow: hidden;
+        display: none;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .segundo-container{
+        width: 200px;
+    }
+    .formulario{
+        width: 100%;
+    }
+    .btn-form{
+        height: 26px;
+    }
+}
+
+@media screen and (max-width: 430px){
+   
+    .primeiro-container{
+        overflow: hidden;
+        display: none;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .segundo-container{
+        width: 380px;
+    }
+    .formulario{
+        width: 100%;
+    }
+    .btn-form{
+        height: 26px;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .primeiro-container{
+        overflow: hidden;
+        display: none;
+    }
+    .segundo-container{
+        width: 80%;
+    }
+    .formulario{
+        width: 100%;
+    }
+    .btn-form{
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    
+    .primeiro-container{
+        overflow: hidden;
+        display: none;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .segundo-container{
+        width: 800px;
+        
+    }
+    .formulario{
+        width: 100%;
+        
+    }
+    .card-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn-form{
+        height: 45px;
+        margin-top: 2vh;
+    }
+    .card-content label {
+        font-size: 18px;
+        margin: 10px;
+    }
+    
+    .card-content-area {
+        display: flex;
+        flex-direction: column;
+        padding:10px 0;
+    }
+    
+    .card-content-area input {
+        font-size: 18px;
+    }
+    textarea{
+        font-size: 18px;
+    }
+    .titulo{
+        text-align: center;
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    
+    .primeiro-container{
+        overflow: hidden;
+        display: none;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .segundo-container{
+        width: 400px;
+    }
+    .formulario{
+        width: 100%;
+    }
+    .btn-form{
+        height: 32px;
+    }
+}
+
