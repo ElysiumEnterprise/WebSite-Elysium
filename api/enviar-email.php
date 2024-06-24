@@ -29,7 +29,7 @@
         $mail->addReplyTo($email, $nome);
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = $subject;
-        $mail->AddEmbeddedImage('<div class="">logo-nome.png','logo_ref');
+        ///$mail->AddEmbeddedImage('<div class="">logo-nome.png','logo_ref');
         $body="<img src='cid:logo_ref'><br>
                 <h1>Mensagem de Usuário</h1><br>
                 Nome: ".$nome."<br>".
