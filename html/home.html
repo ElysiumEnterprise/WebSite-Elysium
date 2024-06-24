@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../css/equipe.css">
     <link rel="stylesheet" href="../css/parceiros.css">
     <link rel="stylesheet" href="../css/projetos.css">
+    <link rel="stylesheet" href="../css/slides.css">
+    <link rel="stylesheet" href="../css/modal.css">
     <link rel="shortcut icon" href="../img/android-chrome-512x512.png" type="image/x-icon">
     <title>Elysium</title>
 </head>
@@ -28,118 +30,134 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#equipe">Nossa Equipe</a></li>
                 <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#fale-conosco">Fale Conosco</a></li>
                 <li> <a href="#parceiros">Parceiros</a></li>
+                <li><a href="#fale-conosco">Fale Conosco</a></li>
+                
             </ul>
         </nav>
     </header>
+    
     <main>
         <section id="home">
             <div class="container-home">
-                <div class="container-principal" id="inicio">
-                    <div class="container-grid-principal">
-                        <div class="conteudo-texto-principal">
-                            <h1>Abrindo os melhores caminhos</h1>
-                            <p>A <strong>Elysisum</strong> atende empresas de médio e pequeno porte com excelência, mostrando aos nossos clientes soluções de suporte, mantendo-as sempre preparadas para seguir os melhores caminhos</p>
-                        </div>
-                        <div class="imagem-ilustrativa-principal">
-                            <img src="../img/img-principal.png" class="img-fluid img-principal" alt="Pessoas Pensando no objetivo">
-                        </div>
-                    </div>
-                    <div class="space-btn-sobre">
-                        <div class="group-btn">
-                            <span>Saiba Mais</span>
-                            <a href="#fundacao">
-                                <img src="../img/button-icon.png"  class="img-fluid img-btn-saiba" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <section class="section-home" id="fundacao">
-                    <div class="container-sections">
-                        <div class="imagem-ilustrativa-principal">
-                            <img src="../img/logo-nome.png" class="img-fluid img-principal" style="width:600px;" alt="Logo da Empresa">
-                        </div>
-                        <div class="conteudo-texto-principal">
-                            <h2>Sobre a Elysium</h2>
-                            <p>No dia 27 de fevereiro de 2024, a Elysium foi criada como uma empresa no ramo da tecnologia com 10 integrantes nela. Somos uma empresa especializada em criação de sites e sitemas para atender as necessidades de nossos cliente</p>
-                        </div>
-                    </div>
-                    <div class="space-btn-sobre">
-                        <div class="group-btn">
-                            <span>Voltar ao ínicio</span>
-                            <a href="#inicio">
-                                <img src="../img/button-up-icon.png"  class="img-fluid img-btn-saiba" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            
-                <section class="section-home" id="objetivo">
-                    <div class="container-sections">
+                <section class="slides-cont">
+                    <div class="slider-principal">
+                        <div class="slides-principal">
+                            <!--Radio Buttons-->
+                            <input type="radio" name="rd-btn-slide" id="rd-slide-principal1">
+                            <input type="radio" name="rd-btn-slide" id="rd-slide-principal2">
+                            <input type="radio" name="rd-btn-slide" id="rd-slide-principal3">
+                            <input type="radio" name="rd-btn-slide" id="rd-slide-principal4">
+                            <input type="radio" name="rd-btn-slide" id="rd-slide-principal5">
+    
+                            <!--Slides-->
+                            <div class="slide first">
+                                <!--<section class="container-principal section-home" id="inicio">
+                                    <div class="container-grid-principal">
+                                        <div class="conteudo-texto-principal">
+                                            <h1>Abrindo os melhores caminhos</h1>
+                                            <p>A <strong>Elysisum</strong> atende empresas de médio e pequeno porte com excelência, mostrando aos nossos clientes soluções de suporte, mantendo-as sempre preparadas para seguir os melhores caminhos</p>
+                                        </div>
+                                        <div class="imagem-ilustrativa-principal">
+                                            <img src="../img/img-principal.png" class="img-fluid img-principal" alt="Pessoas Pensando no objetivo">
+                                        </div>
+                                    </div>
+                                    
+                                </section>-->
+                                <img src="../img/slides/img-slide-apresentacao.png" alt="" class="img-slide img-fluid">
+                            </div>
+                            <div class="slide">
+                                <!--<section class="section-home" id="fundacao">
+                                    <div class="container-sections">
+                                        <div class="imagem-ilustrativa-principal">
+                                            <img src="../img/logo-nome.png" class="img-fluid img-principal" style="width:600px;" alt="Logo da Empresa">
+                                        </div>
+                                        <div class="conteudo-texto-principal">
+                                            <h2>Sobre a Elysium</h2>
+                                            <p>No dia 27 de fevereiro de 2024, a Elysium foi criada como uma empresa no ramo da tecnologia com 10 integrantes nela. Somos uma empresa especializada em criação de sites e sitemas para atender as necessidades de nossos cliente</p>
+                                        </div>
+                                    </div>
+                                    
+                                </section>-->
+                                <img src="../img/slides/slide-sobre.png" alt="" class="img-slide-sobre img-fluid">
+                            </div>
+                            <div class="slide">
+                                <!--<section class="section-home" id="objetivo">
+                                    <div class="container-sections">
+                                        
+                                        <div class="conteudo-texto-principal">
+                                            <h2>Nosso Objetivo</h2>
+                                            <p>A <strong>Elysium</strong> oferece seus produtos e serviços para ajudar nos problemas do cotidiano através da tecnologia. Buscamos a resolução eficaz para melhorar as atividades ou resolver as situações que surgem na necessidades das pessoas em geral</p>
+                                        </div>
+                                        <div class="imagem-ilustrativa-principal">
+                                            <img src="../img/programing.png" class="img-fluid img-principal" alt="Pessoas Pensando no objetivo">
+                                        </div>
+                                    </div>
+                                    
+                                </section>-->
+                                <img src="../img/slides/slide-objetivo.png" alt="" class="img-slide-objetivo img-fluid">
+                            </div>
                         
-                        <div class="conteudo-texto-principal">
-                            <h2>Nosso Objetivo</h2>
-                            <p>A <strong>Elysium</strong> oferece seus produtos e serviços para ajudar nos problemas do cotidiano através da tecnologia. Buscamos a resolução eficaz para melhorar as atividades ou resolver as situações que surgem na necessidades das pessoas em geral</p>
+                            
+                            <div class="slide">
+                                <!--<section class="section-home" id="solucoes">
+                                    <div class="container-sections">
+                                    <div class="imagem-ilustrativa-principal">
+                                            <img src="../img/soluctions-azul.png" class="img-fluid img-principal" alt="Imagem de Soluções">
+                                        </div>
+                                        <div class="conteudo-texto-principal">
+                                            <h2>Soluções Pensadas para Você</h2>
+                                            <p>Cada produto ou ideia surge a partir de <strong>Você</strong>!!! Nossos serviços sempre visam a facilidade e o conforto de nossos cliente, de acordo com as necessidades de encontrar uma solução para algum problema</p>
+                                        </div>
+                                    </div>
+                                    
+                                </section>-->
+                                <img src="../img/slides/slide-solucoes.png" alt="" class="img-slide-solucoes img-fluid">
+                            </div>
+                            
+                            <div class="slide">
+                                <!--<section class="section-home" id="tecnologia">
+                                    <div class="container-sections">
+                                    
+                                        <div class="conteudo-texto-principal">
+                                            <h2>Melhorando o Mundo com Tecnologia</h2>
+                                            <p>Criamos nossos produtos através do uso eficaz e profissional das novas tecnologias que surgem a cada momento para trazer o melhor dos nossos serviços</p>
+                                        </div>
+                                        <div class="imagem-ilustrativa-principal">
+                                            <img src="../img/tecnologia.png" class="img-fluid img-principal" style="width:500px;" alt="Imagem Tecnologia">
+                                        </div>
+                                    </div>
+                                    
+                                </section>-->
+                                <img src="../img/slides/slide-tech.png" alt="" class="img-slide-tech img-fluid">
+                            </div>
+                            
+    
+                            
                         </div>
-                        <div class="imagem-ilustrativa-principal">
-                            <img src="../img/programing.png" class="img-fluid img-principal" alt="Pessoas Pensando no objetivo">
+                        <!--Navigate-Auto-->
+                        <div class="navigate-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                            <div class="auto-btn5"></div>
                         </div>
-                    </div>
-                    <div class="space-btn-sobre">
-                        <div class="group-btn">
-                            <span>Voltar ao ínicio</span>
-                            <a href="#inicio">
-                                <img src="../img/button-up-icon.png"  class="img-fluid img-btn-saiba" alt="">
-                            </a>
+                        <div class="manual-navigation">
+                            <label for="rd-slide-principal1" class="manual-btn1"></label>
+                            <label for="rd-slide-principal2" class="manual-btn2"></label>
+                            <label for="rd-slide-principal3" class="manual-btn3"></label>
+                            <label for="rd-slide-principal4" class="manual-btn4"></label>
+                            <label for="rd-slide-principal5" class="manual-btn5"></label>
                         </div>
                     </div>
                 </section>
                 
-                <section class="section-home" id="solucoes">
-                    <div class="container-sections">
-                    <div class="imagem-ilustrativa-principal">
-                            <img src="../img/soluctions-azul.png" class="img-fluid img-principal" alt="Imagem de Soluções">
-                        </div>
-                        <div class="conteudo-texto-principal">
-                            <h2>Soluções Pensadas para Você</h2>
-                            <p>Cada produto ou ideia surge a partir de <strong>Você</strong>!!! Nossos serviços sempre visam a facilidade e o conforto de nossos cliente, de acordo com as necessidades de encontrar uma solução para algum problema</p>
-                        </div>
-                    </div>
-                    <div class="space-btn-sobre">
-                        <div class="group-btn">
-                            <span>Voltar ao ínicio</span>
-                            <a href="#inicio">
-                                <img src="../img/button-up-icon.png"  class="img-fluid img-btn-saiba" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            
-                <section class="section-home" id="tecnologia">
-                    <div class="container-sections">
-                    
-                        <div class="conteudo-texto-principal">
-                            <h2>Melhorando o Mundo com Tecnologia</h2>
-                            <p>Criamos nossos produtos através do uso eficaz e profissional das novas tecnologias que surgem a cada momento para trazer o melhor dos nossos serviços</p>
-                        </div>
-                        <div class="imagem-ilustrativa-principal">
-                            <img src="../img/tecnologia.png" class="img-fluid img-principal" style="width:500px;" alt="Imagem Tecnologia">
-                        </div>
-                    </div>
-                    <div class="space-btn-sobre">
-                        <div class="group-btn">
-                            <span>Voltar ao ínicio</span>
-                            <a href="#inicio">
-                                <img src="../img/button-up-icon.png"  class="img-fluid img-btn-saiba" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </section>
             </div>
         </section>
         
         <section id="equipe">
+            
             <div class="container-quem-somos">
                 <div class="container-titulo">
                     <h1>Nossa Equipe</h1>
@@ -150,18 +168,18 @@
                         <div class="cont-foto">
                             <img src="../img/equipe/Mariana.jpeg" class="img-fluid foto" alt="Foto da Mariana">
                         </div>
+
                         <div class="cont-nome">
                             <h2>Mariana</h2>
                         </div>
+
                         <div class="cont-function">
                             <h3>Gerente|Dev Back-End</h3>
                         </div>
-                        <div class="cont-desc">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe voluptatibus adipisci vero veritatis natus sapiente quibusdam qui quod expedita optio labore, commodi nesciunt laborum omnis enim maiores nobis cupiditate voluptas!</p>
-                        </div>
+                       
                         <div class="links-redes">
                             <a href="https://www.instagram.com/mariees.b?igsh=dXh3MWVqYWhpdjZ6" target="_blank" rel="noopener noreferrer"><img src="../img/icons/instagram.png" alt="Link Instagram" class="img-fluid"></a>
-                            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-email.png" alt="Link Facebook" class="img-fluid"></a>
+                            <a href="mailto:maribranr2@gmail.com" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-email.png" alt="Link Facebook" class="img-fluid"></a>
                             <a href="http://github.com/mariana8brandao" target="_blank" rel="noopener noreferrer"><img src="../img/icons/github.png" alt="Link GitHub" class="img-fluid"></a>
                         </div>
                     </section>
@@ -176,12 +194,10 @@
                         <div class="cont-function">
                             <h3>Analista</h3>
                         </div>
-                        <div class="cont-desc">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe voluptatibus adipisci vero veritatis natus sapiente quibusdam qui quod expedita optio labore, commodi nesciunt laborum omnis enim maiores nobis cupiditate voluptas!</p>
-                        </div>
+                        
                         <div class="links-redes">
                             <a href="https://www.instagram.com/011._.henrique.zl?igsh=MTVjdzlodHlwZjF1OA==" target="_blank" rel="noopener noreferrer"><img src="../img/icons/instagram.png" alt="Link Instagram" class="img-fluid"></a>
-                            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-email.png" alt="Link Facebook" class="img-fluid"></a>
+                            <a href="mailto:Pedroefigenio40@gmail.com" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-email.png" alt="Link Facebook" class="img-fluid"></a>
                             <a href="http://" target="_blank" rel="noopener noreferrer"><img src="../img/icons/github.png" alt="Link GitHub" class="img-fluid"></a>
                         </div>
                     </section>
@@ -196,9 +212,7 @@
                         <div class="cont-function">
                             <h3>Analista</h3>
                         </div>
-                        <div class="cont-desc">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe voluptatibus adipisci vero veritatis natus sapiente quibusdam qui quod expedita optio labore, commodi nesciunt laborum omnis enim maiores nobis cupiditate voluptas!</p>
-                        </div>
+                        
                         <div class="links-redes">
                             <a href="https://www.instagram.com/gih_eduarda134?igsh=MWd4dnQ5M2JzZHM3eA==" target="_blank" rel="noopener noreferrer"><img src="../img/icons/instagram.png" alt="Link Instagram" class="img-fluid"></a>
                             <a href="http://" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-email.png" alt="Link Facebook" class="img-fluid"></a>
@@ -215,9 +229,7 @@
                         <div class="cont-function">
                             <h3>Administradora de Banco de Dados</h3>
                         </div>
-                        <div class="cont-desc">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe voluptatibus adipisci vero veritatis natus sapiente quibusdam qui quod expedita optio labore, commodi nesciunt laborum omnis enim maiores nobis cupiditate voluptas!</p>
-                        </div>
+                        
                         <div class="links-redes">
                             <a href="https://www.instagram.com/ana_aires_?igsh=bHh4Z21uMWdnNnh2" target="_blank" rel="noopener noreferrer"><img src="../img/icons/instagram.png" alt="Link Instagram" class="img-fluid"></a>
                             <a href="http://" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-email.png" alt="Link Email" class="img-fluid"></a>
@@ -234,12 +246,10 @@
                         <div class="cont-function">
                             <h3>Administrador de Banco de Dados</h3>
                         </div>
-                        <div class="cont-desc">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe voluptatibus adipisci vero veritatis natus sapiente quibusdam qui quod expedita optio labore, commodi nesciunt laborum omnis enim maiores nobis cupiditate voluptas!</p>
-                        </div>
+                       
                         <div class="links-redes">
                             <a href="https://www.instagram.com/pedro_phpaschoal?igsh=MWZ0cGh2dDAwcWp5aQ==" target="_blank" rel="noopener noreferrer"><img src="../img/icons/instagram.png" alt="Link Instagram" class="img-fluid"></a>
-                            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-email.png" alt="Link Email" class="img-fluid"></a>
+                            <a href="mailto:paschoalpedro1@gmail.com" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-email.png" alt="Link Email" class="img-fluid"></a>
                             <a href="https://github.com/paschoalzera" target="_blank" rel="noopener noreferrer"><img src="../img/icons/github.png" alt="Link GitHub" class="img-fluid"></a>
                         </div>
                     </section>
@@ -254,12 +264,10 @@
                         <div class="cont-function">
                             <h3>Dev Fulstack|Back-End</h3>
                         </div>
-                        <div class="cont-desc">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe voluptatibus adipisci vero veritatis natus sapiente quibusdam qui quod expedita optio labore, commodi nesciunt laborum omnis enim maiores nobis cupiditate voluptas!</p>
-                        </div>
+                       
                         <div class="links-redes">
                             <a href="https://www.instagram.com/guilhermedeomachado?igsh=bmZ4eXZwNXdtMTRv" target="_blank" rel="noopener noreferrer"><img src="../img/icons/instagram.png" alt="Link Instagram" class="img-fluid"></a>
-                            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-email.png" alt="Link Email" class="img-fluid"></a>
+                            <a href="mailto:machado.gui.oliveira@gmail.com" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-email.png" alt="Link Email" class="img-fluid"></a>
                             <a href="https://github.com/guilhermeomachadotech" target="_blank" rel="noopener noreferrer"><img src="../img/icons/github.png" alt="Link GitHub" class="img-fluid"></a>
                         </div>
                     </section>
@@ -274,12 +282,10 @@
                         <div class="cont-function">
                             <h3>Tester</h3>
                         </div>
-                        <div class="cont-desc">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe voluptatibus adipisci vero veritatis natus sapiente quibusdam qui quod expedita optio labore, commodi nesciunt laborum omnis enim maiores nobis cupiditate voluptas!</p>
-                        </div>
+                        
                         <div class="links-redes">
                             <a href="https://www.instagram.com/pxuloow?igsh=eDdxa3A3bW5veG0w" target="_blank" rel="noopener noreferrer"><img src="../img/icons/instagram.png" alt="Link Instagram" class="img-fluid"></a>
-                            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-email.png" alt="Link Email" class="img-fluid"></a>
+                            <a href="mailto:goncalvespaulo003@gmail.com" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-email.png" alt="Link Email" class="img-fluid"></a>
                             <a href="https://github.com/Paulo09Goncalves" target="_blank" rel="noopener noreferrer"><img src="../img/icons/github.png" alt="Link GitHub" class="img-fluid"></a>
                         </div>
                     </section>
@@ -294,9 +300,7 @@
                         <div class="cont-function">
                             <h3>Designer|Dev Front-End</h3>
                         </div>
-                        <div class="cont-desc">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe voluptatibus adipisci vero veritatis natus sapiente quibusdam qui quod expedita optio labore, commodi nesciunt laborum omnis enim maiores nobis cupiditate voluptas!</p>
-                        </div>
+                        
                         <div class="links-redes">
                             <a href="https://www.instagram.com/paula_acl06?igsh=MWluc3RsMG9sYThkeg==" target="_blank" rel="noopener noreferrer"><img src="../img/icons/instagram.png" alt="Link Instagram" class="img-fluid"></a>
                             <a href="http://" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-email.png" alt="Link Facebook" class="img-fluid"></a>
@@ -315,12 +319,10 @@
                         <div class="cont-function">
                             <h3>Dev Front-End</h3>
                         </div>
-                        <div class="cont-desc">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe voluptatibus adipisci vero veritatis natus sapiente quibusdam qui quod expedita optio labore, commodi nesciunt laborum omnis enim maiores nobis cupiditate voluptas!</p>
-                        </div>
+                        
                         <div class="links-redes">
                             <a href="https://www.instagram.com/rebecca192006?igsh=aW90Y28yMTAyejk=" target="_blank" rel="noopener noreferrer"><img src="../img/icons/instagram.png" alt="Link Instagram" class="img-fluid"></a>
-                            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-email.png" alt="Link Facebook" class="img-fluid"></a>
+                            <a href="mailto:rebeccasilva192006@gmail.com" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-email.png" alt="Link Facebook" class="img-fluid"></a>
                             <a href="https://github.com/rebecca-silva" target="_blank" rel="noopener noreferrer"><img src="../img/icons/github.png" alt="Link GitHub" class="img-fluid"></a>
                         </div>
                     </section>
@@ -335,9 +337,7 @@
                         <div class="cont-function">
                             <h3>Dev Back-End</h3>
                         </div>
-                        <div class="cont-desc">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe voluptatibus adipisci vero veritatis natus sapiente quibusdam qui quod expedita optio labore, commodi nesciunt laborum omnis enim maiores nobis cupiditate voluptas!</p>
-                        </div>
+                       
                         <div class="links-redes">
                             <a href="https://www.instagram.com/viicbarroso?igsh=MXJzYXZleXgya3cwag==" target="_blank" rel="noopener noreferrer"><img src="../img/icons/instagram.png" alt="Link Instagram" class="img-fluid"></a>
                             <a href="http://" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-email.png" alt="Link Facebook" class="img-fluid"></a>
@@ -350,68 +350,96 @@
                 </div>
             </div>
         </section>
+
+        
+
+        
+        <section id="projetos">
+            <div class="container-projetos">
+                <div class="cont-titulo">
+                    <h1>Projetos</h1>
+                </div>
+                <div class="cont-principal-projetos">
+                    <div class="cont-img">
+                        <img src="../img/icons/img-projetos.avif" class="img-icon-projetos img-fluid" alt="Gif de computador tecnologia">
+                    </div>
+                    <div class="cont-text-projetos">
+                        <div class="cont-titulo-projetos">
+                            <h2>Projetos Feitos pela Nossa Equipe</h2>
+                        </div>
+                        <div class="cont-paragraph">
+                            <p>Conheça os projetos feitos pela nossa equipe para trazer o melhor para você, como a TinyHaven, o nosso mais novo projeto.</p>
+                        </div>
+                        <div class="cont-btn-projetos">
+                            <a href="https://github.com/ElysiumEnterprise?tab=repositories" target="_blank">Ver Projetos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="parceiros">
             <div class="container-parceiros">
+
                 <div class="titulo">
                     <h1 class="titulo-parceiros">Parceiros da Elysium</h1>
                 </div>
+
                 <div class="container-cards">
                     <div class="card-parceiros">
                         <div class="cont-card-parceiros">
+
                             <div class="imgCard-parceiros">
-                                <img src="../img/icons/empresa.png" alt="Empresa 1" class="imagem-parceiros img-fluid">
+                                <img src="../img/parceiros/logoTextoBrancoTransparente.png" alt="Apex" class="imagem-parceiros img-fluid">
                             </div>
-                            
-                            <h2 class="empresa">Empresa 1</h2>
                             <div class="desc">
-        
-                                <p class="txt-empresa">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit tempore error ipsam atque, amet mollitia blanditiis natus
-                                    similique quisquam autem voluptatum, sapiente ipsa nihil maxime iste dolor odit assumenda omnis!
+                                <p class="txt-empresa">
+                                    A empresa APEX se aliou a nossa empresa para trazer o conforto e otimização das tarefas de nossos colaboradores e cliente.
                                 </p>
-        
                             </div>
+
                             <div class="btn-empresa">
-                                <a class="link" href="#">Ver mais</a>
+                                <button class="link" onclick="abrirLinkParceiros(1)">Ver mais</button>
                             </div>
+
                          </div>
                     </div>
         
                     <div class="card-parceiros">
                         <div class="cont-card-parceiros">
                             <div class="imgCard-parceiros">
-                                <img src="../img/icons/empresa.png" alt="Empresa 2" class="imagem-parceiros img-fluid">
+                                <img src="../img/parceiros/union.png" alt="Union" class="imagem-parceiros img-fluid">
                             </div>
         
-                            <h3 class="empresa">Empresa 2</h3>
                             <div class="desc">
         
-                                <p class="txt-empresa">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit tempore error ipsam atque, amet mollitia blanditiis natus
-                                    similique quisquam autem voluptatum, sapiente ipsa nihil maxime iste dolor odit assumenda omnis!
+                                <p class="txt-empresa">
+                                    A empresa UNION se aliou a nossa empresa para trazer o conforto e otimização das tarefas de nossos colaboradores e cliente.
                                 </p>
-        
                             </div>
+
                             <div class="btn-empresa">
-                                <a class="link" href="#">Ver mais</a>
+                                <button class="link" onclick="abrirLinkParceiros(2)">Ver mais</button>
                             </div>
+
                          </div>
                     </div>
         
                     <div class="card-parceiros">
                         <div class="cont-card-parceiros">
                             <div class="imgCard-parceiros">
-                                <img src="../img/icons/empresa.png" alt="Empresa 3" class="imagem-parceiros img-fluid">
+                                <img src="../img/parceiros/logoTarget-.png" alt="Target" class="imagem-parceiros img-fluid">
                             </div>
         
-                            <h3 class="empresa">Empresa 3</h3>
                             <div class="desc">
         
-                                <p class="txt-empresa">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit tempore error ipsam atque, amet mollitia blanditiis natus
-                                    similique quisquam autem voluptatum, sapiente ipsa nihil maxime iste dolor odit assumenda omnis!
+                                <p class="txt-empresa">
+                                    A empresa Target se aliou a nossa empresa para trazer o conforto e otimização das tarefas de nossos colaboradores e cliente.
                                 </p>
         
                             </div>
                             <div class="btn-empresa">
-                                <a class="link" href="#">Ver mais</a>
+                                <button class="link" onclick="abrirLinkParceiros(3)">Ver mais</button>
                             </div>
                          </div>
                     </div>
@@ -419,9 +447,7 @@
                 
             </div>
         </section>
-        <section id="projetos">
-            
-        </section>
+        
         <section id="fale-conosco">
             <div class="container-titulo-section">
                 <h1>Fale Conosco</h1>
@@ -435,25 +461,30 @@
                     </div>
                 </div>
                 <div class="segundo-container">
-                    <form method="post" action='../php/enviar-email.php' class="formulario" name="form">
+                    <form method="post" action='../api/enviar-email.php' class="formulario" name="form">
         
                         <div class="card-content">
                             
                             <div class="card-content-area">
                                 <label for="nome">Nome</label>
-                                <input type="text" name="nome" id="nome" placeholder="Digite seu nome..." >
+                                <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui..." >
                                 <div class="errorName" id="errorContent"></div>
                             </div>
         
                             <div class="card-content-area">
                                 <label for="email">Email</label>
-                                <input type="email" name="email" id="email" placeholder="Digite seu email..." >
+                                <input type="email" name="email" id="email" placeholder="Digite seu email aqui..." >
                                 <div class="errorEmail" id="errorContent"></div>
+                            </div>
+                            <div class="card-content-area">
+                                <label for="assunto">Assunto</label>
+                                <input type="text" name="assunto" id="assunto" placeholder="Digite o assunto do email aqui..." >
+                                <div class="errorAssunto" id="errorContent"></div>
                             </div>
         
                             <div class="card-content-area">
-                                <label for="mensagem">Mensagem</label>
-                                <textarea name="msg" id="msg" cols="30" rows="4" ></textarea>
+                                <label for="msg">Mensagem</label>
+                                <textarea name="msg" id="msg" cols="30" rows="4" placeholder="Digite sua mensagem aqui..."></textarea>
                                 <div class="errorMsg" id="errorContent"></div>
                             </div>
         
@@ -464,9 +495,27 @@
                         </div>
                     </form>
                 </div>
-        
+                
             </div>
+            <dialog>
+                <div class="container-modal">
+                    <div class="container-thanks">
+                        <div class="cont-img">
+                            <img src="../img/logo-nome.png" alt="Logo Elysium" class="img-fluid img-modal">
+                        </div>
+                        <div class="cont-text">
+                            <h1>Obrigado por seu email!</h1>
+                            <h2>A Elysium responderá você assim que possível!</h2>
+                        </div>
+                        <div class="cont-btn">
+                            <button onclick="fecharModal()">Fechar</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </dialog>
         </section>
+        
     </main>
     
     <footer>
@@ -500,10 +549,10 @@
                 <div class="group-links">
                     <h6>Projetos</h6>
                     <ul>
-                        <li><a href="">Projeto 1</a></li>
-                        <li><a href="">Projeto 2</a></li>
-                        <li><a href="">Projeto 3</a></li>
-                        <li><a href="">Projeto 4</a></li>
+                        <li><a href="">TinyHaven</a></li>
+                        <li><a href="">ZooKids</a></li>
+                        <li><a href="">APP Cinema</a></li>
+                        <li><a href="">Dengue</a></li>
                     </ul>
                 </div>
                 <div class="group-links">
@@ -519,9 +568,9 @@
             <hr>
                  
                  <div class="redes-sociais">
-                    <a href=""><img src="../img/icon-instagram.png" class="img-fluid icon-redes" alt="Link Instagram"></a>
-                    <a href=""><img src="../img/icon-facebook.png" class="img-fluid icon-redes" alt="Link Facebook"></a>
-                    <a href=""><img src="../img/icon-github.png" class="img-fluid icon-redes" alt="Link GitHub"></a>
+                    <a href="https://www.instagram.com/elyconnect_?utm_source=qr&igsh=MWd0aTd0OTJyNGhmbA==" target="_blank"><img src="../img/icon-instagram.png" class="img-fluid icon-redes" alt="Link Instagram"></a>
+                    <a href="" target="_blank"><img src="../img/icon-facebook.png" class="img-fluid icon-redes" alt="Link Facebook"></a>
+                    <a href="https://github.com/ElysiumEnterprise" target="_blank"><img src="../img/icon-github.png" class="img-fluid icon-redes" alt="Link GitHub"></a>
                  </div>
                  <hr>
                  <div class="marca-registrada">
@@ -534,11 +583,15 @@
                  </div>
         </div>
     </footer>
+    
     <script src="../js/menu-mobile.js"></script>
     <script src="../js/scroll-page.js"></script>
     <script src="../js/validar-form.js"></script>
+    <script src="../js/slides.js"></script>
+    <script src="../js/mudar-pagina.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
+
 </html>
     

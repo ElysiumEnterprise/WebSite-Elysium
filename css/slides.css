@@ -1,0 +1,117 @@
+.slides-cont{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.slider-principal{
+    width: 100%;
+    min-height: 470px;
+
+    overflow: hidden;
+}
+.slides-principal{
+    width: 480%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 300px;
+
+    transition: 1s;
+}
+.slide img{
+    width: 80%;
+
+}
+.slide .img-slide-sobre{
+    width: 70%;
+}
+.slide .img-slide-solucoes{
+    width: 70%;
+}
+.slide .img-slide-tech{
+    width: 70%;
+}
+.slides-principal input{
+    display: none;
+}
+.slides-principal .slide{
+    width: 25%;
+    position:relative;
+}
+.manual-navigation{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-navigation label{
+    border: 2px solid #0e2d54;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-navigation label:not(:last-child){
+    margin-right: 40px;
+}
+.manual-navigation label:hover{
+    background-color: #0e2d54;
+}
+
+#rd-slide-principal1:checked ~ .first{
+    margin-left: 0;
+}
+#rd-slide-principal1:checked{
+    background-color: #0e2d54;
+}
+#rd-slide-principal2:checked ~ .first{
+    margin-left: -30%;
+}
+#rd-slide-principal3:checked ~ .first{
+    margin-left: -76%;
+}
+#rd-slide-principal4:checked ~ .first{
+    margin-left: -130%;
+}
+#rd-slide-principal5:checked ~ .first{
+    margin-left: -176%;
+}
+.navigate-auto div{
+    border: 2px solid #0e2d54;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.navigate-auto{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.navigate-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#rd-slide-principal1:checked ~ .navigate-auto .auto-btn1{
+    background-color: #0e2d54;
+}
+#rd-slide-principal2:checked ~ .navigate-auto .auto-btn2{
+    background-color: #0e2d54;
+}
+#rd-slide-principal3:checked ~.navigate-auto .auto-btn3{
+    background-color: #0e2d54;
+}
+#rd-slide-principal4:checked ~.navigate-auto .auto-btn4{
+    background-color: #0e2d54;
+}
+#rd-slide-principal5:checked ~.navigate-auto .auto-btn5{
+    background-color: #0e2d54;
+}

@@ -15,12 +15,14 @@
 .container-titulo-section{
     display: flex;
     width: 100%;
+    margin-top: 20px;
     justify-content: center;
     align-items: center;
 }
 .container-titulo-section h1{
     color: #0e2d54;
     text-align: center;
+    font-family: 'Abadi-Extra-Light';
     font-weight: bold;
 }
 .container-fale-conosco{
@@ -28,13 +30,13 @@
     align-items: center;
     justify-content: center;
     flex: 1;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .primeiro-container{
     width: 440px;
-    min-height: 500px;
+    min-height: 570px;
     border-radius: 20px;
     background-color: #add8e646;
     display: flex;
@@ -53,8 +55,8 @@
     align-items: center;
     justify-content: center;
     width: 450px;
-    
-   
+    min-height: 570px;
+    font-family: 'Abadi-Extra-Light';
     margin-left: 1%;
     background-color: #0e2d54;
     border-radius: 20px;
@@ -105,7 +107,7 @@
 }
 
 
-.card-content-area input::-webkit-input-placeholder{
+.card-content-area input::-webkit-input-placeholder, .card-content-area textarea::-webkit-input-placeholder{
     color: #fff;
 }
 textarea{

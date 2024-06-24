@@ -8,6 +8,7 @@
     $nome=$_POST['nome'];
     $email=$_POST['email'];
     $msg=$_POST['msg'];
+    $subject=$_POST['assunto'];
 
     $mail = new PHPMailer(true);
 
@@ -27,7 +28,7 @@
         $mail->addAddress('elysium.business01@gmail.com', 'Admin Elysium');     //Add a recipient
         $mail->addReplyTo($email, $nome);
         $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'Mensagem de Usuário';
+        $mail->Subject = $subject;
         $mail->AddEmbeddedImage('../img/logo-nome.png','logo_ref');
         $body="<img src='cid:logo_ref'><br>
                 <h1>Mensagem de Usuário</h1><br>
@@ -38,7 +39,8 @@
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
     
         $mail->send();
-        header('Location:../html/thanks.html');
+        header('Location:../html/home.html');
+        
     } catch (Exception $e) {
         echo "Erro no envio da mensagem. Mailer Error: {$mail->ErrorInfo}";
     }

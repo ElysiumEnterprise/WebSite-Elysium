@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 900px;
+    min-height: 500px;
     padding: 10px 20px ;
     /*background-image: url('../img/fundo-2.png');*/
     background-repeat: no-repeat;
@@ -35,6 +35,7 @@
     background-attachment: local;
     font-family: 'Abadi extra light';
 }
+
 .container-grid-principal, .container-sections{
     display: grid;
     flex: 1;
@@ -42,6 +43,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .conteudo-texto-principal{
     display: flex;
     flex-direction: column;
@@ -108,7 +110,7 @@
 
 .section-home{
     font-family: 'Abadi extra light';
-    min-height: 80vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -159,3 +161,6 @@
         transform: translateY(0);
     }
 }
+
+
+

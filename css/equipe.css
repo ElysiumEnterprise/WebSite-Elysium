@@ -2,10 +2,12 @@
     font-family: 'Caviar-Dreams';
     src: url('../fonts/CaviarDreams.ttf');
 }
+
 @font-face {
     font-family: 'Abadi-Extra-Light';
     src: url('../fonts/AbadiMTStd-ExtraLight.ttf');
 }
+
 :root{
     --color-background-nav: #0e2d54;
     --color-back-container: #5488c8;
@@ -32,15 +34,17 @@
     justify-content: center;
     align-items: center;
 }
+
 .container-titulo h1{
     font-family: 'Abadi-Extra-Light';
     color:  #0e2d54;
     text-align: center;
     font-weight: bold;
 }
+
 .container-equipe{
     display: grid;
-   flex-direction: row;
+    flex-direction: row;
     z-index: 0;
     transition: all 0.3s ease-in-out;
     background-size: contain;
@@ -50,12 +54,8 @@
     align-items: center;
     grid-template-columns: repeat(4,2fr);
 }
-.container-equipe #rebecca{
-    grid-column: 2;
-}
-.container-equipe #vitoria{
-    grid-column: 3;
-}
+
+
 
 .section-equipe{
     display: flex;
@@ -63,28 +63,17 @@
     border-radius: 20px 20px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     background-color: #0e2d54;
-    width: 300px;
+    width: 260px;
+    
     padding: 20px;
     margin: 10px;
-    min-height: 600px;
+    min-height: 450px;
     z-index: 0;
     position: relative;
     background-size: contain;
+    margin-top: 5%;
 }
-/*#mariana{
-    left: 20%;
-    opacity: 0.4;
-    transform: translateX(-50%);
-}
-#efigenio, #ana{
-    min-height: 500px;
-    opacity: 0.8;
-    min-width: 300px;
-}*/
 
-#efigenio{
-    left: 0%;
-}
 @keyframes animateSection {
     from{
         opacity: 0;
@@ -98,53 +87,67 @@
 }
 .section-equipe .cont-foto, .section-equipe .cont-nome, .section-equipe .cont-function, .section-equipe .cont-desc{
     display: flex;
-    flex: 1;
+    flex:2;
     justify-content: center;
     align-items: center;
 }
+
 .section-equipe .cont-foto img{
     border-radius: 50%;
     width: 200px;
 }
-.section-equipe .cont-nome{
-    margin-top: 10px;
-}
+
 .section-equipe .cont-nome h2{
     font-family: 'Abadi-Extra-Light';
     color: var(--color-neutral-30);
     font-weight: bold;
     text-align: center;
+    margin-top: 5px;
 }
 
 .section-equipe .cont-function h3{
     font-family: 'Abadi-Extra-Light';
     color: var(--color-neutral-30);
     text-align: center;
-    font-weight: bold;
+    font-size: 25px;
 }
+
 #ana .cont-function h3{
     font-size: 20px;
 } 
+.container-equipe #rebecca{
+    grid-column: 2;
+}
+.container-equipe #vitoria{
+    grid-column: 3;
+}
+
+/*
 .section-equipe .cont-desc p{
     font-family: 'Abadi-Extra-Light';
     font-size: 15px;
     color: var(--color-neutral-30);
     text-align: justify;
 }
+*/
+
 .section-equipe .links-redes{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
+
 .section-equipe .links-redes a img{
     width: 30px;
     transition: 0.2s ease-in;
 }
+
 .section-equipe .links-redes a img:hover{
     opacity: 0.5;
     transform: scale(100px);
 }
+
 @media (max-width:700px){
     .container-equipe{
         display: flex;
@@ -153,3 +156,4 @@
         align-items: center;
     }
 }
+

@@ -1,0 +1,84 @@
+:root{
+    --color-background-nav: #0e2d54;
+    --color-back-container: #5488c8;
+    --color-neutral-20: #e8e9ed;
+    --color-neutral-30: white ;
+}
+@font-face {
+    font-family: "caviar-dreams";
+    src: url('../fonts/CaviarDreams.ttf');
+}
+@font-face {
+    font-family: "Abadi";
+    src: url('../fonts/AbadiMTStd.ttf');
+}
+@font-face  {
+    font-family: "Abadi extra light" ;
+    src: url('../fonts/AbadiMTStd-ExtraLight.ttf');
+}
+
+dialog{
+    width: 60%;
+    min-height: 90px;
+    background-color: white;
+    border: none;
+    border-radius:10px;
+    justify-content: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: 0.5s;
+}
+.container-modal{
+    display: flex;
+    width: 100%;
+    
+    flex-direction: column;
+}
+.conatiner-thanks{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.cont-img{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.img-modal{
+    width:500px;
+}
+.cont-text{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cont-text h2, h1{
+
+    font-family: 'Abadi extra light';
+    font-weight: bold;
+    color: #0e2d54;
+    text-align: center;
+}
+.cont-btn{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.cont-btn button{
+    width: 80px;
+    height: 35px;
+    outline:none;
+    border:none;
+    background-color: #0e2d54;
+    font-family: 'Abadi extra light';
+    color: #e8e9ed;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+}
