@@ -30,8 +30,7 @@
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = $subject;
         //$mail->AddEmbeddedImage('<div class="">logo-nome.png','logo_ref');
-        $body="
-                <h1>Mensagem de Usuário</h1><br>
+        $body="<h1>Mensagem de Usuário</h1><br>
                 Nome: ".$nome."<br>".
                 "Email: ".$email."<br>".
                 "Mensagem: ".$msg;

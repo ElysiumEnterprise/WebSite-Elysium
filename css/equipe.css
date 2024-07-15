@@ -63,11 +63,11 @@
     border-radius: 20px 20px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     background-color: #0e2d54;
-    width: 260px;
+    width: 240px;
     
     padding: 20px;
     margin: 10px;
-    min-height: 450px;
+    min-height: 360px;
     z-index: 0;
     position: relative;
     background-size: contain;
@@ -87,14 +87,14 @@
 }
 .section-equipe .cont-foto, .section-equipe .cont-nome, .section-equipe .cont-function, .section-equipe .cont-desc{
     display: flex;
-    flex:2;
+    flex:1;
     justify-content: center;
     align-items: center;
 }
 
 .section-equipe .cont-foto img{
     border-radius: 50%;
-    width: 200px;
+    width: 160px;
 }
 
 .section-equipe .cont-nome h2{
@@ -102,6 +102,7 @@
     color: var(--color-neutral-30);
     font-weight: bold;
     text-align: center;
+    font-size: 22px;
     margin-top: 5px;
 }
 
@@ -109,7 +110,7 @@
     font-family: 'Abadi-Extra-Light';
     color: var(--color-neutral-30);
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #ana .cont-function h3{
