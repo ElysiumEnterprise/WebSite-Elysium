@@ -110,6 +110,7 @@
 .card-content-area input::-webkit-input-placeholder, .card-content-area textarea::-webkit-input-placeholder{
     color: #fff;
 }
+
 textarea{
     background-color: transparent;
     border-color: var(--color-neutral-20);
@@ -143,7 +144,7 @@ textarea{
 }
 
 .btn-form:hover{
-    background-color: #68b3f0bd;
+    background-color: #2c64a8;
     color: #fff;
 }
 

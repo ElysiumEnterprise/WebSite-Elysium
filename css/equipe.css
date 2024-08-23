@@ -12,7 +12,7 @@
     --color-background-nav: #0e2d54;
     --color-back-container: #5488c8;
     --color-neutral-20: #e8e9ed;
-    --color-neutral-30: white ;
+    --color-neutral-30: #fff ;
 }
 
 .container-quem-somos{
@@ -24,7 +24,6 @@
     padding: 10px 10px;
     background-color: var(--color-neutral-30);
 }
-
 
 .container-titulo{
     display: flex;
@@ -56,15 +55,12 @@
 }
 
 
-
 .section-equipe{
     display: flex;
     flex-direction: column;
     border-radius: 20px 20px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     background-color: #0e2d54;
     width: 240px;
-    
     padding: 20px;
     margin: 10px;
     min-height: 360px;
@@ -85,6 +81,7 @@
         transform: translateY(0);
     }
 }
+
 .section-equipe .cont-foto, .section-equipe .cont-nome, .section-equipe .cont-function, .section-equipe .cont-desc{
     display: flex;
     flex:1;
