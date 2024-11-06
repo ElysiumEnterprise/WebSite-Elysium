@@ -47,11 +47,6 @@
     text-align: center;
     border-radius: 10px;
     min-height: 400px;
-    transition: 0.1s ease-in;
-}
-
-.card-parceiros:hover{
-    transform: scale(1.01);
 }
 
 .container-parceiros .card-parceiros{
@@ -76,9 +71,9 @@
 
 .empresa{
     font-size: 25px;
-    color: white;
-    font-weight: bold;
+    color: #fff;
     font-family: "Abadi-Extra-Light";
+    
 }
 
 .desc{
@@ -86,10 +81,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    word-spacing: -2px;
 }
 
 .txt-empresa{
-    color: white;
+    color: #fff;
     font-family: "Abadi-Extra-Light";
     text-align: justify;
 }
@@ -113,7 +109,7 @@
     padding: 4px;
     cursor: pointer;
     font-weight: bold;
-    transition:ease-in 0.2s;
+    transition: ease-in 0.2s;
     font-family: 'Abadi-Extra-Light';
 }
 

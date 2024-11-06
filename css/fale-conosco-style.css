@@ -42,7 +42,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 2px 2px #0000002c;
 }
 
 .imagem-icon{
@@ -58,9 +57,7 @@
     min-height: 570px;
     font-family: 'Abadi-Extra-Light';
     margin-left: 1%;
-    background-color: #0e2d54;
     border-radius: 20px;
-    box-shadow: 3px 3px #0000002c;
 }
 
 .titulo{
@@ -83,7 +80,7 @@
 
 .card-content label {
     font-family: 'Abadi-Extra-Light';
-    color: var(--color-neutral-20);
+    color: #0e2d54;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 15px;
@@ -97,28 +94,28 @@
 }
 
 .card-content-area input {
-    background-color: transparent;
-    border:none;
-    border-bottom: 1px solid var(--color-neutral-20);
-    outline: none;
-    color: var(--color-neutral-20);
+    background-color: #d1ddeb;
+    border-radius: 10px;
+    border: none;
+    color: #0e2d54;
     font-size: 16px;
-    
+    padding: 6px;
+    outline: none;
 }
 
 
 .card-content-area input::-webkit-input-placeholder, .card-content-area textarea::-webkit-input-placeholder{
-    color: #fff;
+    color: #0e2d54;
 }
 
 textarea{
-    background-color: transparent;
-    border-color: var(--color-neutral-20);
+    background-color: #d1ddeb;
     border-radius: 10px;
     outline: none;
-    color: var(--color-neutral-20);
+    border: none;
+    color: #0e2d54;
     font-size: 16px;
-    padding: 5px;
+    padding: 6px;
     resize: none;
 }
 
@@ -126,6 +123,8 @@ textarea{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    border: none;
 }
 
 .btn-form{
@@ -133,7 +132,7 @@ textarea{
     width: 54%;
     height: 32px;
     font-size: 20px;
-    background-color: var(--color-neutral-20);
+    background-color: #a0c2e9;
     border:none;
     color:var(--color-background-nav);
     margin: 15px 0;
